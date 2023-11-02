@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavigationBar</title>
+</head>
+<style>
+    nav {
+        background-color: rgb(207, 186, 186);
+        border-radius: 3px;
+    }
+    li {
+        display:inline-block;
+        text-align: center;
+    }
+    li img:hover{
+        background-color: black;
+        border-radius:8px;
+    }
+    img {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right:20px;
+        padding-left: 20px;
+    }
+
+</style>
+<script>
+    function hover(element, image){
+        element.setAttribute('src', image);
+    }
+    function unhover(element, image){
+        element.setAttribute('src', image);
+    }
+</script>
+<body>
+    <nav>
+        <ul class="navigation-panel">
+            <li><a href="/index.html"><img src="/Text_Fonts/HomePageUnclicked.png" onmouseover="hover(this, '/Text_Fonts/HomePageHover.png');" onmouseout="unhover(this, '/Text_Fonts/HomePageUnclicked.png');"></a></li>
+            <li><a href="/Main/Pages/infoPage.html"><img src="/Text_Fonts/InformationPageUnclicked.png" onmouseover="hover(this, '/Text_Fonts/InformationPageHover.png');" onmouseout="unhover(this, '/Text_Fonts/InformationPageUnclicked.png');"></a></li>
+            <li><a href="/Main/Pages/Sections/nav-directory.html"><img id="offset-image" src="/Text_Fonts/DirectoryPageUnclicked.png" onmouseover="hover(this, '/Text_Fonts/DirectoryPageHover.png');" onmouseout="unhover(this, '/Text_Fonts/DirectoryPageUnclicked.png');"></a></li>
+        </ul>
+    </nav>    
+</body>
+</html>

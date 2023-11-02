@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weapons/Swords</title>
+    <link rel="stylesheet" href="/Main/Styles/equipmentStyles.css">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<style>
+    body {
+        background-image: url("/Images/MyImages/nature_6/origbig.png");
+    }
+</style>
+<body>
+    
+    <header>
+        <div id="navigation">
+            
+        </div>       
+        <script>
+            $(function(){
+                $("#navigation").load("/Main/Pages/Sections/nav.html")  ;
+            });
+        </script>       
+    </header>
+    <section id="center">
+        <div>
+            <img src="/Text_Fonts/SwordPageTitle.png">
+            
+            <table id="weapons">
+                <tr>
+                    <td></td>
+                    <td>Description</td>
+                    <td>Attribute</td>
+                    <td>Attack</td>
+                    <td>Maximum properties</td>
+                    <td>Experience per Property</td>
+                    <td>Region</td>
+                </tr>
+                <tr>
+                    <td class="images" id="weapon-sword-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Pack 1/2px/29.png" alt="classic-sword" >
+                        </div>     
+                    </td>
+                        <td><p class="weapon-description">The default starting weapon given to all players of the <i>Cat</i>. 
+                            It's unscratched surface displays a bright youthful gleam. 
+                            This sword has no experience!
+                        </p></td>
+                    <td>None</td>
+                    <td>900</td>
+                    <td>1</td>
+                    <td>20,000 EXP</td>
+                    <td><h5></h5></td>
+                </tr>
+                <tr>
+                    <td class="images" id="weapon-sword-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Pack 4/2px/04.png" alt="sword2">
+                        </div>
+                    </td>
+                        <td><p class="weapon-description">A welded sword produced from the sap of the once mighty hard 
+                            defender of the woods! Judging from its appearance it's easy to tell that this sword is capable 
+                            of gaping enemies wide open!
+                        </p></td>
+                    <td>Always hits twice</td>
+                    <td>600 (x2)</td>
+                    <td>2</td>
+                    <td>30,000 EXP</td>
+                    <td><h5>Lowlands</h5></td>
+                </tr>
+                <tr>
+                    <td class="images" id="weapon-sword-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Pack 5/2px/20.png" alt="sword3">
+                        </div>
+                    </td>
+                    <td>
+                        <p class="weapon-description">A rough and rigid claymore borne before those who doth seek control. In the hands of many
+                            it was intended to immobilize its victim in tandem with a vigourous pounding into submission.
+                        </p>
+                    </td>
+                    <td><i>Ingrains</i> the target for 1 second on hit. Additionally, The effected target is also more susceptible to status effects</td>
+                    <td>1100</td>
+                    <td>2</td>
+                    <td>32,500 EXP</td>
+                    <td><h5>Lowlands</h5></td>
+                </tr>
+                <tr >
+                    <td class="images" id="weapon-sword-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Pack 4/2px/10.png" alt="Zulfiqar" >
+                        </div>
+                    </td>
+                        <td><p class="weapon-description">
+                            A tool capable of adapting to any size. Its dual prongs specialize in double penetration. Certain stains left of the 
+                            smooth shaft indicate that it is used to leaving marks.
+                        </p></td>
+                    <td>Chance to apply <i>Bleeding</i> and <i>Poison</i></td>
+                    <td>990</td>
+                    <td>3</td>
+                    <td>50,000 EXP</td>
+                    <td><h5>Desert</h5></td>
+                </tr>
+                <tr>
+                    <td class="images" id="weapon-sword-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Pack 4/2px/20.png">
+                        </div>
+                    </td>
+                        <td>
+                            <p class="weapon-description">
+                                The unscratched surface of the head contains no kinks or markings. It appears it has never had any opponents approach it so easily.
+                                The weapon instills fear into its enemies, stripping them bare of their will. 
+                            </p>
+                        </td>
+                        <td>Nearby enemies are afflicted with the <i>Fear</i> status effect for 10 seconds upon entering battle.</td>
+                        <td>1440</td>
+                        <td>3</td>
+                        <td>55,000 EXP</td>
+                        <td><h5>Desert</h5></td>
+                </tr>
+                <tr>
+                    <td class="images" id="weapon-sword-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Pack 5/2px/10.png">
+                        </div>
+                    </td>
+                        <td>
+                            <p class="weapon-description">
+                                This eloquent rock was erected after the mountains faced wear and tear for thousands of years. 
+                                    It is known for its ability to cause those it faces to be stoned.
+                            </p>
+                        </td>
+                        <td>Upon landing a hit, a rock of varying size is dropped on the target, dealing 50-100% damage</td>
+                        <td>1500</td>
+                        <td>3</td>
+                        <td>65,000 EXP</td>
+                        <td><h5>Mountains</h5></td>
+                </tr>
+                <tr>
+                    <td class="images" id="weapon-sword-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Pack 5/2px/07.png">
+                        </div>
+                    </td>
+                        <td>
+                            <p class="weapon-description">
+                                By the law of equivalent exchange, anyone who can give should also receive. 
+                                    A saber that indiscriminately dominates not just the men, but the women and children too.
+                            </p>
+                        </td>
+                        <td>Upong receiving damage, returning an attack within 0.3s deals the damage you took</td>
+                        <td>1600</td>
+                        <td>4</td>
+                        <td>67,300 EXP</td>
+                        <td><h5>Mountains</h5></td>
+                </tr>
+
+                <tr>
+                    <td class="images" id="weapon-sword-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Pack 5/2px/09.png">
+                        </div>
+                    </td>
+                        <td>
+                            <p class="weapon-description">
+                                The last person who played with this sword had an insatiable lust for power. Their efforts seemed
+                                    in vain however; in a seemlessly endless cycle, the blade continues to discharge itself from its holders. 
+                            </p>
+                        </td>
+                        <td>On every swing, creates a cy-clone of itself, dealing 33% of the original damage and swirls around the wielder for a few seconds</td>
+                        <td>1777</td>
+                        <td>4</td>
+                        <td>67,300 EXP</td>
+                        <td><h5>Plains</h5></td>
+                </tr>
+                <tr>
+                    <td class="images" id="weapon-sword-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Pack 2/2px/33.png">
+                        </div>
+                    </td>
+                        <td>
+                            <p class="weapon-description">
+                                    A tool used to imbibe its victims; The "Queen"'s reign was ended 
+                                    when this weapon was used to seal her away. Intense powers still linger within this sword, 
+                                    giving much needed relief in times of great stress.
+                            </p>
+                        </td>
+                        <td>When dealing damage, drains health on contact. Recover 20% of damage dealt as HP.</td>
+                        <td>1400</td>
+                        <td>5</td>
+                        <td>70,000 EXP</td>
+                        <td><h5>Plains</h5></td>
+                </tr>
+                <tr>
+                    <td class="images" id="weapon-sword-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Pack 3/2px/15.png" alt="Malice">
+                        </div>
+                    </td>
+                        <td>
+                            <p class="weapon-description">
+                                It creates unbelievable amounts of pressure with every convulsion, 
+                                and the explosion at the climax emanates the true power of this sword.
+                            </p>
+                        </td>
+                        <td>Gain a stack of <i>Frigid</i> on every hit.  
+                            Performing a charged attack consumes all stacks (up to 5), increasing its damage by 1.5x per <i>Frigid</i> stack.</td>
+                        <td>750 (1500)</td>
+                        <td>6</td>
+                        <td>80,000 EXP</td>
+                        <td><h5>Ice</h5></td>
+                </tr>
+                <tr>
+                    <td class="images" id="weapon-sword-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Pack 5/2px/18.png" alt="Frose">
+                        </div>
+                    </td>
+                        <td>
+                            <p class="weapon-description">
+                                This weapon can link minds together and store certain memories. It might've made for a great couple's gift.
+                            </p>
+                        </td>
+                        <td>On hit, apply a <b>Sheer Cold</b> tag. When attacking an opponent affected by <b>Sheer Cold</b>, 
+                        all active opponents visible on screen with <b>Sheer Cold</b> take 33% <i>Ice</i> damage</td>
+                        <td>2000</td>
+                        <td>5</td>
+                        <td>90,000 EXP</td>
+                        <td><h5>Ice</h5></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        footer
+    </footer>
+    
+</body>
+</html>

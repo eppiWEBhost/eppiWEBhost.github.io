@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="/Main/Styles/equipmentStyles.css">
+</head>
+<style>
+    body {
+        background-image: url("/Images/MyImages/nature_3/origbig.png");
+    }
+    .equipment-nav nav ul li a img:hover {
+        background-color: beige;
+    }
+</style>
+<body>
+    <header>
+        <div id="navigation">
+            
+        </div>       
+        <script>
+            $(function(){
+                $("#navigation").load("/Main/Pages/Sections/nav.html")  ;
+            });
+        </script>       
+    </header>
+    <div class="equipment-nav">
+        <nav>
+            <ul>
+                <li><a href="/Main/Weapons/shields.html"><img src="/Text_Fonts/EquipmentText/ShieldDirectoryText.png"></a></li>
+                <li><a href="/Main/Weapons/swords.html"><img src="/Text_Fonts/EquipmentText/SwordDirectoryText.png"></a></li>
+                <li><a href="/Main/Weapons/cases.html"><img src="/Text_Fonts/EquipmentText/CasesDirectoryText.png"></a></li>
+                <li><a href="/Main/Weapons/ranger.html"><img src="/Text_Fonts/EquipmentText/RangedDirectoryText.png"></a></li>
+            </ul>
+        </nav>  
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weapons/Cases</title>
+    <link rel="stylesheet" href="/Main/Styles/equipmentStyles.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<style>
+    body {
+        background-image:url("/Images/MyImages/nature_1/origbig.png");
+    }
+    #weapons tr td div{
+        height: 70px;
+    }
+</style>
+<body>
+    <header>
+        <div id="navigation">
+            
+        </div> 
+        <script>
+            $(function(){
+                $("#navigation").load("/Main/Pages/Sections/nav.html")  ;
+            });
+        </script> 
+    </header>
+    <section id="center">
+        <div>
+            <img src="/Text_Fonts/RangedPageTitle.png">
+
+            <table id="weapons">
+                 <tr>
+                    <td></td>
+                    <td>Description</td>
+                    <td>Effect</td>
+                    <td>Attack per shot</td>
+                    <td>Maximum properties</td>
+                    <td>Experience per Property</td>
+                    <td>Region</td>
+                 </tr>
+                 <tr>
+                    <td class="images" id="weapon-gun-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Ranged1px/13.png">
+                        </div> 
+                    </td>
+                    <td class="weapon-description">
+                        The starting weapon for all players of the <i>Frog</i>. The <i>Frog</i> sprays
+                        from its tongue with this weapon in its throat.
+                    </td>
+                    <td>Slows the target by 15%.</td>
+                    <td>50 - 30</td>
+                    <td>2</td>
+                    <td>20,000 EXP</td>
+                    <td></td>
+                 </tr>
+                 <tr>
+                    <td class="images" id="weapon-gun-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Ranged1px/8.png">
+                        </div>
+                    </td>
+                    <td class="weapon-description">
+                        Is a quick shot. Fires 2 projectiles one after the other at a very fast pace.
+                    </td>
+                    <td>Fire rate increases by up to +50% over time.</td>
+                    <td>17 - 9</td>
+                    <td>2</td>
+                    <td>23,000 EXP</td>
+                    <td>Lowlands</td>
+                 </tr>
+                 <tr>
+                    <td class="images" id="weapon-gun-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Ranged1px/49.png">
+                        </div>
+                    </td>
+                    <td class="weapon-description">
+                        Somewhat bears a resemblance to a flintlock. <br> 
+                        "Cuidado! Caliente!"
+                    </td>
+                    <td><i>Burns</i> the struck target.</td>
+                    <td>57 - 46</td>
+                    <td>2</td>
+                    <td>23,000 EXP</td>
+                    <td>Lowlands</td>                  
+                 </tr>
+                 <tr>
+                    <td class="images" id="weapon-gun-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Ranged1px/12.png">
+                        </div>
+                    </td>
+                    <td class="weapon-description">
+                        Encased within is the raw power of the Patriarch.<br>... The Patriarch had an exceptional 
+                        skill for penetrating his prey.
+                    </td>
+                    <td>Pierces +3, deals AoE damage on every pierce.</td>
+                    <td>69 - 42</td>
+                    <td>3</td>
+                    <td>29,000 EXP</td>
+                    <td>Desert</td>                  
+                 </tr>
+                 <tr>
+                    <td class="images" id="weapon-gun-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Ranged1px/15.png">
+                        </div>
+                    </td>
+                    <td class="weapon-description">
+                        The power of the Sun is yours. All those who do feel the rays of the Sun will too face 
+                        its unabridged power.
+                    </td>
+                    <td>Does not overheat.</td>
+                    <td>67</td>
+                    <td>3</td>
+                    <td>29,000 EXP</td>
+                    <td>Desert</td>                  
+                 </tr>
+                 <tr>
+                    <td class="images" id="weapon-gun-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Ranged1px/5.png">
+                        </div>
+                    </td>
+                    <td class="weapon-description">
+                        A cannon that blasts massive balls of fire. It has an ability to completely char entire areas.
+                        <br> Unfortunately, the effects seem to only last for so long.
+                    </td>
+                    <td>Shoots <i>Fireballs</i>that deal damage and leave a (puddle of fire) for 3s.</td>
+                    <td>70 (50)</td>
+                    <td>4</td>
+                    <td>35,000 EXP</td>
+                    <td>Mountains</td>                  
+                 </tr>
+                 <tr>
+                    <td class="images" id="weapon-gun-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Ranged1px/39.png">
+                        </div>
+                    </td>
+                    <td class="weapon-description">
+                        Manifests pebbles from within. Not even the largest of hordes can withstand its rock hard
+                        power.
+                    </td>
+                    <td>Pebbles split into 3 on contact. Each dealing a third of its original damage</td>
+                    <td>81 - 34</td>
+                    <td>4</td>
+                    <td>35,000 EXP</td>
+                    <td>Mountains</td>                  
+                 </tr>
+                 <tr>
+                    <td class="images" id="weapon-gun-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Ranged1px/23.png">
+                        </div>
+                    </td>
+                    <td class="weapon-description">
+                        Venom from the fangs of a serpent have proven to be the most effective form of Poison
+                        for years. The poison seems to seriously take a toll on its host's health after a while.
+                    </td>
+                    <td><i>Poisons</i> the target. <i>Poison</i> can stack up to thrice in the same tick.</td>
+                    <td>77 - 44 (22)</td>
+                    <td>5</td>
+                    <td>41,000 EXP</td>
+                    <td>Plains</td>                  
+                 </tr>
+                 <tr>
+                    <td class="images" id="weapon-gun-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Ranged1px/47.png">
+                        </div>
+                    </td>
+                    <td class="weapon-description">
+                        Occasionally, a long snake will retain its venom within for a long time. Because of this,
+                        it is quite unexpected when a large load is unleashed all at once.
+                    </td>
+                    <td>Deals elemental damage. Every 6 shots, fire a <i>Congestion</i>, dealing 600% attack, and 
+                        will <i>Crit</i>.
+                    </td>
+                    <td>68 - 48</td>
+                    <td>5</td>
+                    <td>41,000 EXP</td>
+                    <td>Plains</td>                  
+                 </tr>
+                 <tr>
+                    <td class="images" id="weapon-gun-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Ranged1px/9.png">
+                        </div>
+                    </td>
+                    <td class="weapon-description">
+                        ???
+                    </td>
+                    <td>Damage per shot increases over time instead.</td>
+                    <td>1 - 90</td>
+                    <td>6</td>
+                    <td>50,000 EXP</td>
+                    <td>Ice</td>                  
+                 </tr>
+                 <tr>
+                    <td class="images" id="weapon-gun-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Ranged1px/22.png">
+                        </div>
+                    </td>
+                    <td class="weapon-description">
+                        ???
+                    </td>
+                    <td>Deal up to double damage based on distance.</td>
+                    <td>80 - 60 <br>(160 - 120)</td>
+                    <td>6</td>
+                    <td>50,000 EXP</td>
+                    <td>Ice</td>                   
+                 </tr>
+            </table>
+
+        </div>
+    </section>
+</body>
+</html>

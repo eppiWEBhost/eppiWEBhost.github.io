@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weapons/Shields</title>
+    <link rel="stylesheet" href="/Main/Styles/equipmentStyles.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<style>
+    body {
+        background-image:url("/Images/MyImages/nature_4/origbig.png");
+    }
+</style>
+<body>
+    <header>
+        <div id="navigation">
+            
+        </div> 
+        <script>
+            $(function(){
+                $("#navigation").load("/Main/Pages/Sections/nav.html")  ;
+            });
+        </script> 
+    </header>
+    <section id="center">
+        <div>
+            <img src="/Text_Fonts/ShieldPageTitle.png">
+
+            <table id="weapons">
+                <tr>
+                    <td></td>
+                    <td>Description</td>
+                    <td>Attribute</td>
+                    <td>Attack</td>
+                    <td>Block (Parry) resistance</td>
+                    <td>Maximum properties</td>
+                    <td>Experience per Property</td>
+                    <td>Region</td>
+                </tr>
+                <tr>
+                    <td class="images" id="weapon-shield-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Shields21px/12.png">
+                        </div> 
+                    </td>
+                    <td class="weapon-description">The starting shield for players of the <i>Penguin</i> It seems to be resistant enough to
+                        provide some protection.</td>
+                    <td>Can <i>Block</i> attacks.</td>
+                    <td>700</td>
+                    <td>50% (0%)</td>
+                    <td>1</td>
+                    <td>17,500 EXP</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="images" id="weapon-shield-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Shields1px/11.png">
+                        </div> 
+                    </td>
+                    <td class="weapon-description">Provides significant protection against those who seek entry.
+                        The solid wood framing prevents even the worst of <i>Burns</i>!
+                    </td>
+                    <td>Can <i>Block</i> attacks. Blocks incapacitate additional <i>Burn</i> effects.</td>
+                    <td>750</td>
+                    <td>50% (0%)</td>
+                    <td>2</td>
+                    <td>21,500 EXP</td>
+                    <td><h5>Lowlands</h5></td>
+                </tr>
+                <tr>
+                    <td class="images" id="weapon-shield-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Shields1px/22.png">
+                        </div> 
+                    </td>
+                    <td class="weapon-description">An impregnable shell. Don't shoot your emissions in this direction; 
+                        this shell can reflect it back just as powerfully!
+                    </td>
+                    <td>Can <i>Parry</i> projectile attacks. <i>Parried</i> projectile attacks travel faster.</td>
+                    <td>820</td>
+                    <td>40% (90%)</td>
+                    <td>2</td>
+                    <td>25,500 EXP</td>
+                    <td><h5>Lowlands</h5></td>         
+                </tr>
+                <tr>
+                    <td class="images" id="weapon-shield-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Shields1px/4.png">
+                        </div> 
+                    </td>
+                    <td class="weapon-description">Coated with a thick layer of sticky wax. This shield was found
+                        with remnants of many questionable subtances engrossed within.
+                    </td>
+                    <td>Can <i>Parry</i> melee atacks. <i>Parried</i> attacks that contain DoT effects are absorbed in the shield.
+                        Absorbed effects are transferred on the next attack.</td>
+                    <td>890</td>
+                    <td>50% (90%)</td>
+                    <td>3</td>
+                    <td>35,500 EXP</td>
+                    <td><h5>Desert</h5></td>         
+                </tr>
+                <tr>
+                    <td class="images" id="weapon-shield-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Shields1px/23.png">
+                        </div> 
+                    </td>
+                    <td class="weapon-description">Crafted from what appears to be the loincloths of the 'Matriarch'. 
+                        Its undesirable scent appears to disinterest those who approach.
+                    </td>
+                    <td>Can <i>Block</i> attacks. <i>Blocked</i> attacks will repel all nearby opponents in a radius.</td>
+                    <td>1000</td>
+                    <td>55% (95%)</td>
+                    <td>4</td>
+                    <td>37,500 EXP</td>
+                    <td><h5>Desert</h5></td>         
+                </tr>
+                <tr>
+                    <td class="images" id="weapon-shield-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Shields1px/32.png">
+                        </div> 
+                    </td>
+                    <td class="weapon-description">Smoothly trimmed edges allows for incredible aerodynamics. 
+                        Rush your foes quickly with this abrasive guard!
+                    </td>
+                    <td>Can <i>Block</i> attacks. When <i>Blocking</i>, dash in the direction of the <i>Block</i> attack.</td>
+                    <td>1100</td>
+                    <td>60% (0%)</td>
+                    <td>4</td>
+                    <td>45,000 EXP</td>
+                    <td><h5>Mountains</h5></td>         
+                </tr>
+                <tr>
+                    <td class="images" id="weapon-shield-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Shields1px/26.png">
+                        </div> 
+                    </td>
+                    <td class="weapon-description">By the law of inequality, not everyone is deserving.
+                        Though capable of subjugating only those who are afflicted with defects, this weapon guards
+                        especially well.
+                    </td>
+                    <td>Can <i>Parry</i> all attacks from opponents. <i>Parry</i> damage and resistance increases the 
+                    lower the victims health is in comparison to the wielder's.</td>
+                    <td>900 - 1400</td>
+                    <td>50% - 80% (90% - 100%)</td>
+                    <td>3</td>
+                    <td>50,000 EXP</td>
+                    <td><h5>Mountains</h5></td>         
+                </tr>
+                <tr>
+                    <td class="images" id="weapon-shield-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Shields21px/32.png">
+                        </div> 
+                    </td>
+                    <td class="weapon-description">All those under the sun who follow shall be protected likewise.
+                        It follows that non-believers will face a harsh yet just retribution.
+                    </td>
+                    <td>Can <i>Parry</i> all attacks from opponents. A <i>Sun Shield</i> is generated after a <i>Parry</i>
+                        for 5 seconds. All party members inside the area of the cover deal 5% additional damage and take 4% less damage for every party member.
+                        Enemies near the <i>Sun Shield</i> lose 1.1% of their health every second.
+                        </td>
+                    <td>700</td>
+                    <td>33% (66%)</td>
+                    <td>4</td>
+                    <td>60,000 EXP</td>
+                    <td><h5>Plains</h5></td>         
+                </tr> 
+                <tr>
+                    <td class="images" id="weapon-shield-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Shields1px/31.png">
+                        </div> 
+                    </td>
+                    <td class="weapon-description">
+                        Capable of absorbing even the hardest of hits. The holder was always found to be in better
+                        health when returning from battle. This shields regenerative properties have yet to be understood.
+                    </td>
+                    <td>Can <i>Parry</i> attacks. When dealing damage, store 20% of dealt damage within the shield, increasing attack.
+                        When <i>Parrying</i> successfully, restore up to 40% Max Health based on the stored power.</td>
+                    <td>600 - 1000</td>
+                    <td>50% (90%)</td>
+                    <td>4</td>
+                    <td>66,000 EXP</td>
+                    <td><h5>Plains</h5></td>         
+                </tr>
+                <tr>
+                    <td class="images" id="weapon-shield-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Shields1px/15.png">
+                        </div> 
+                    </td>
+                    <td class="weapon-description">
+                        Absolutely stunning. Its reflective surface bears a resemblance to the clearest of waters;
+                        if it was frozen over.
+                    </td>
+                    <td>Can <i>Parry</i> attacks. When <i>Parrying</i> successfully, opponents in a large radius become <i>Frozen</i>
+                        for 3 seconds. If <i>Frozen</i> opponents are struck by an attack, the ice is shattered and take an additional
+                        instance of damage equal to 33% of attack. If <i>Frozen</i> opponents melt naturally, their speed slows by 22% for 5 seconds.</td>
+                    <td>1111</td>
+                    <td>20% (100%)</td>
+                    <td>5</td>
+                    <td>70,000 EXP</td>
+                    <td><h5>Ice</h5></td>
+                </tr>
+                <tr>
+                    <td class="images" id="weapon-shield-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Shields1px/27.png">
+                        </div> 
+                    </td>
+                    <td class="weapon-description">
+                        It is said that mirrors were once able to refract emotions in a crude manner. 
+                        A shattered mirror may indicate ones insecurity, in the another way a pristine mirror 
+                        may display narcissism. The effect of a mirror can be quite brutal.
+                    </td>
+                    <td>Can <i>Parry</i> attacks. When <i>Parrying</i> an attack, expunge opponents in an instant
+                        by the <i>Mirrors Gaze</i>.</td>
+                    <td>1000 (2222)</td>
+                    <td>11% (22%)</td>
+                    <td>6</td>
+                    <td>88,000 EXP</td>
+                    <td><h5>Ice</h5></td>
+                </tr>                   
+            </table>
+
+        </div>
+    </section>
+
+    
+</body>
+</html>
