@@ -9,17 +9,13 @@ body {
     font-size:15px;
 }
 
-.equipment-nav nav ul li{
-    display:inline-block;
-    list-style: none;
+.weapon-class-description {
+    margin:auto;
+    font-size: 20px;
+    width:97%;
+    background-color: white;
 }
-.equipment-nav nav ul{
-    padding-right:20px;
-    text-align:center;
-}
-.equipment-nav {
-    width: 450px;
-}
+
 
 #center {
     margin-left:auto;
@@ -44,6 +40,23 @@ body {
     height: 100px;
 }
 #weapons tr td div img{
+    height: 90%;
+}
+#effects {
+    margin-left:20px;
+    margin-right:20px;
+    background-color:whitesmoke;
+    border-collapse:collapse;
+    opacity: 0.94;
+}
+#effects td{
+    border: 1px solid gainsboro;
+    padding: 5px;
+}
+#effects tr td div{
+    height: 100px;
+}
+#effects tr td div img{
     height: 90%;
 }
 
