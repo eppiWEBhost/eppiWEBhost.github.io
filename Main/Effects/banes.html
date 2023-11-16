@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Effects/Amplifiers</title>
+    <title>Effects/Banes</title>
     <link rel="stylesheet" href="/Main/Styles/equipmentStyles.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
@@ -37,134 +37,23 @@
                 <tr>
                     <td class="images" id="effect-icon-image">
                         <div>
-                            <img src="/Images/EffectSprites/Healing.png">
+                            <img src="/Images/EffectSprites/Blind.png">
                         </div> 
                     </td>
                     <td>
-                        Healing
+                        Blindness
                     </td>
                     <td>
                         <p class="effect-description">
-                            Regenerates the maximum health of the affected target. Healing amount depends on the source. 
-                        </p>
-                    </td>
-                    <td>
-                        Instant
-                    </td>
-                    <td>
-                        Players, Cities
-                    </td>
-                    <td>
-                        Yes
-                    </td>
-                </tr>
-                <tr>
-                    <td class="images" id="effect-icon-image">
-                        <div>
-                            <img src="/Images/EffectSprites/Debridement.png">
-                        </div>
-                    </td>
-                    <td>
-                        Debridement
-                    </td>
-                    <td>
-                        <p class="effect-description">
-                            Removes a negative status effect or bane from the affected target. <br>Amount of removed effects may depend on the
-                            attributes of the source.
-                        </p>
-                    </td>
-                    <td>
-                        Instant
-                    </td>
-                    <td>Players, Enemies</td>
-                    <td>
-                        No
-                    </td>
-                </tr>
-                <tr>
-                    <td class="images" id="effect-icon-image">
-                        <div>
-                            <img src="/Images/EffectSprites/Strength.png">
-                        </div>
-                    </td>
-                    <td>
-                        Strength
-                    </td>
-                    <td>
-                        <p class="effect-description">
-                            Damage dealt increased by a certain amount. 
-                        </p>
-                    </td>
-                    <td>
-                        20 seconds
-                    </td>
-                    <td>Players, Enemies</td>
-                    <td>
-                        No
-                    </td>
-                </tr>
-                <tr>
-                    <td class="images" id="effect-icon-image">
-                        <div>
-                            <img src="/Images/EffectSprites/RingOfFire.png">
-                        </div>
-                    </td>
-                    <td>
-                        Ring of Fire
-                    </td>
-                    <td>
-                        <p class="effect-description">
-                            An AoE effect that deals constant <i>Burning</i> damage to nearby targets
-                        </p>
-                    </td>
-                    <td>
-                        10 seconds
-                    </td>
-                    <td>Players, Enemies, Totems</td>
-                    <td>
-                        No
-                    </td>
-                </tr>
-                <tr>
-                    <td class="images" id="effect-icon-image">
-                        <div>
-                            <img src="/Images/EffectSprites/Omniscient.png">
-                        </div>
-                    </td>
-                    <td>
-                        Omniscient
-                    </td>
-                    <td>
-                        <p class="effect-description">
-                            See all opponent attacks a second before it executes. 
-                        </p>
-                    </td>
-                    <td>
-                        8 seconds
-                    </td>
-                    <td>Players</td>
-                    <td>
-                        No
-                    </td>
-                </tr>
-                <tr>
-                    <td class="images" id="effect-icon-image">
-                        <div>
-                            <img src="/Images/EffectSprites/Helios.png">
-                        </div>
-                    </td>
-                    <td>
-                        Helios
-                    </td>
-                    <td>
-                        <p class="effect-description">
-                            All party members inside the area of the shield deal 5% additional damage and take 4% less damage for every party member.
+                            Restricts the vision of the affected target
                         </p>
                     </td>
                     <td>
                         5 seconds
                     </td>
-                    <td>Sun Shield</td>
+                    <td>
+                        Enemies
+                    </td>
                     <td>
                         No
                     </td>
@@ -172,91 +61,196 @@
                 <tr>
                     <td class="images" id="effect-icon-image">
                         <div>
-                            <img src="/Images/EffectSprites/Luck.png">
-                        </div>
+                            <img src="/Images/EffectSprites/Burning.png">
+                        </div> 
                     </td>
                     <td>
-                        Luck
-                    </td>
-                    <td>
-                        <p class="effect-description">
-                            Increased chance to receive higher quality items from dropped sources.
-                        </p>
-                    </td>
-                    <td>
-                        3 minutes
-                    </td>
-                    <td>Players</td>
-                    <td>
-                        No
-                    </td>
-                </tr>    
-                <tr>
-                    <td class="images" id="effect-icon-image">
-                        <div>
-                            <img src="/Images/EffectSprites/ProjectileBonus.png">
-                        </div>
-                    </td>
-                    <td>
-                        Augmented Ammo
+                        Burning
                     </td>
                     <td>
                         <p class="effect-description">
-                            All projectiles pierce
+                            Enemies take and deal <i>Fire</i> damage constantly during this duration.
                         </p>
                     </td>
                     <td>
-                        30 seconds
-                    </td>
-                    <td>Potions</td>
-                    <td>
-                        No
-                    </td>
-                </tr>     
-                <tr>
-                    <td class="images" id="effect-icon-image">
-                        <div>
-                            <img src="/Images/EffectSprites/IncreaseDrops.png">
-                        </div>
+                        3 seconds
                     </td>
                     <td>
-                        Greed
+                        Enemies, Players, Environment
                     </td>
-                    <td>
-                        <p class="effect-description">
-                            All drop amounts increased by a certain amount. Collection radius also increased drastically.
-                        </p>
-                    </td>
-                    <td>
-                        Permanent
-                    </td>
-                    <td><b>Phrog</b> passive ability</td>
-                    <td>
-                        No
-                    </td>
-                </tr>       
-                <tr>
-                    <td class="images" id="effect-icon-image">
-                        <div>
-                            <img src="/Images/EffectSprites/CriticalDamage.png">
-                        </div>
-                    </td>
-                    <td>
-                        Powerup
-                    </td>
-                    <td>
-                        <p class="effect-description">
-                            Damage dealt on a critical strike doubled.
-                        </p>
-                    </td>
-                    <td>
-                        10 critical strikes
-                    </td>
-                    <td>Potions</td>
                     <td>
                         Yes
                     </td>
                 </tr>
+                <tr>
+                    <td class="images" id="effect-icon-image">
+                        <div>
+                            <img src="/Images/EffectSprites/Curse.png">
+                        </div> 
+                    </td>
+                    <td>
+                        Curse
+                    </td>
+                    <td>
+                        <p class="effect-description">
+                            Weakens the target. Damage taken increases by a certain amount
+                        </p>
+                    </td>
+                    <td>
+                        5 hits
+                    </td>
+                    <td>
+                        Enemies
+                    </td>
+                    <td>
+                        Yes
+                    </td>
+                </tr>
+                <tr>
+                    <td class="images" id="effect-icon-image">
+                        <div>
+                            <img src="/Images/EffectSprites/Cycle.png">
+                        </div> 
+                    </td>
+                    <td>
+                        Cycle
+                    </td>
+                    <td>
+                        <p class="effect-description">
+                            Flips the intended direction of the affected target
+                        </p>
+                    </td>
+                    <td>
+                        5 seconds
+                    </td>
+                    <td>
+                        Enemies, Players
+                    </td>
+                    <td>
+                        No
+                    </td>
+                </tr>
+                <tr>
+                    <td class="images" id="effect-icon-image">
+                        <div>
+                            <img src="/Images/EffectSprites/Fear.png">
+                        </div> 
+                    </td>
+                    <td>
+                        Fear
+                    </td>
+                    <td>
+                        <p class="effect-description">
+                            Movement and attack speed greatly decreased
+                        </p>
+                    </td>
+                    <td>
+                        10 seconds
+                    </td>
+                    <td>
+                        <b>Scorpion</b> staff effect, Minibosses
+                    </td>
+                    <td>
+                        No
+                    </td>
+                </tr>
+                <tr>
+                    <td class="images" id="effect-icon-image">
+                        <div>
+                            <img src="/Images/EffectSprites/Mute.png">
+                        </div> 
+                    </td>
+                    <td>
+                        Mute
+                    </td>
+                    <td>
+                        <p class="effect-description">
+                            Unable to use any attacking abilities
+                        </p>
+                    </td>
+                    <td>
+                        8 seconds
+                    </td>
+                    <td>
+                        Enemies
+                    </td>
+                    <td>
+                        No
+                    </td>
+                </tr>
+                <tr>
+                    <td class="images" id="effect-icon-image">
+                        <div>
+                            <img src="/Images/EffectSprites/Petrified.png">
+                        </div> 
+                    </td>
+                    <td>
+                        Ingrained
+                    </td>
+                    <td>
+                        <p class="effect-description">
+                            Unable to move from current location
+                        </p>
+                    </td>
+                    <td>
+                        2 seconds
+                    </td>
+                    <td>
+                        Enemies, <b>Tree</b> sword
+                    </td>
+                    <td>
+                        Yes
+                    </td>
+                </tr>
+                <tr>
+                    <td class="images" id="effect-icon-image">
+                        <div>
+                            <img src="/Images/EffectSprites/Stun.png">
+                        </div> 
+                    </td>
+                    <td>
+                        Stunned
+                    </td>
+                    <td>
+                        <p class="effect-description">
+                            For a brief moment, unable to do anything
+                        </p>
+                    </td>
+                    <td>
+                        0.5 seconds
+                    </td>
+                    <td>
+                        Enemies, <b>Rock</b> sword
+                    </td>
+                    <td>
+                        No
+                    </td>
+                </tr>
+                <tr>
+                    <td class="images" id="effect-icon-image">
+                        <div>
+                            <img src="/Images/EffectSprites/Wet.png">
+                        </div> 
+                    </td>
+                    <td>
+                        Slippery
+                    </td>
+                    <td>
+                        <p class="effect-description">
+                            Abilities have a certain chance to not activate, and enter cooldown instead
+                        </p>
+                    </td>
+                    <td>
+                        5 seconds
+                    </td>
+                    <td>
+                        Enemies
+                    </td>
+                    <td>
+                        No
+                    </td>
+                </tr>
+     
             </table>
         </div>
     </section>
