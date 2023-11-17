@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes</title>
+    <link rel="stylesheet" href="/Main/Styles/equipmentStyles.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<style>
+    body {
+        background-image:url("/Images/MyImages/nature_8/origbig.png");
+    }
+</style>
+<body>
+    <header>
+        <div id="navigation">
+            
+        </div> 
+        <script>
+            $(function(){
+                $("#navigation").load("/Main/Pages/Sections/nav.html")  ;
+            });
+        </script> 
+    </header>
+    <section id="center">
+        <div>
+            <table id = "weapons">
+                <tr>
+                    <td>Name</td>
+                    <td>Effect</td>
+                    <td>Maximum</td>
+                    <td>Increase per property</td>
+                    <td>Applies</td>
+                </tr>
+
+                <tr>
+                    <td>Sharpness</td>
+                    <td>Permanent increase to this weapons attack stat</td>
+                    <td>+20%</td>
+                    <td>2 - 5%</td>
+                    <td>Swords, Shields</td>
+                </tr>
+
+                <tr>
+                    <td>Adept</td>
+                    <td>Permanent increase to the amount of swings for this weapon</td>
+                    <td>+2</td>
+                    <td>+1</td>
+                    <td>Swords, Shields</td>
+                </tr>
+
+                <tr>
+                    <td>Ammunition</td>
+                    <td>Permanent increase to the amount of shots for this weapon</td>
+                    <td>+12</td>
+                    <td>+3</td>
+                    <td>Guns</td>
+                </tr>
+
+                <tr>
+                    <td>Effectiveness</td>
+                    <td>Permanent increase to the amount of ticks for this weapon</td>
+                    <td>+3</td>
+                    <td>+1</td>
+                    <td>Cases</td>
+                </tr>
+
+                <tr>
+                    <td>Mana</td>
+                    <td>Permanent increase to the wielders Mana regeneration rate</td>
+                    <td>+40/s</td>
+                    <td>+10/s</td>
+                    <td>Cases, Guns, Swords</td>
+                </tr>
+
+                <tr>
+                    <td>Adaptive</td>
+                    <td>Decreases amount of knockback taken</td>
+                    <td>-100%</td>
+                    <td>-33%</td>
+                    <td>Shields, Guns</td>
+                </tr>
+
+                <tr>
+                    <td>Cooldown</td>
+                    <td>Decreases the cooldown for the wielder's abilities</td>
+                    <td>-18%</td>
+                    <td>-6%</td>
+                    <td>Cases, Swords</td>
+                </tr>
+
+                <tr>
+                    <td>Dodge</td>
+                    <td>Gives chance for wielder to avoid damage once</td>
+                    <td>9%</td>
+                    <td>3%</td>
+                    <td>Swords, Guns</td>
+                </tr>
+
+                <tr>
+                    <td>Mirror</td>
+                    <td>Enemies take a certain amount of damage in return</td>
+                    <td>+200 damage</td>
+                    <td>+100 damage</td>
+                    <td>Shields</td>
+                </tr>
+
+                <tr>
+                    <td>Enhancement</td>
+                    <td>This item gains extra EXP</td>
+                    <td>+33%</td>
+                    <td>+11%</td>
+                    <td>Swords, Shields, Cases, Guns</td>
+                </tr>
+
+                <tr>
+                    <td>Blockers</td>
+                    <td>Absorb a certain percentage of nearby teammate's damage taken</td>
+                    <td>+10%</td>
+                    <td>+10%</td>
+                    <td>Shields, Cases</td>
+                </tr>
+
+                <tr>
+                    <td>Vision</td>
+                    <td>Increase sight range by a certain amount</td>
+                    <td>+12%</td>
+                    <td>+4%</td>
+                    <td>Guns</td>
+                </tr>
+
+                <tr>
+                    <td>Tree</td>
+                    <td>Adds additional points to use on the skill tree</td>
+                    <td>+3</td>
+                    <td>+1</td>
+                    <td>Swords, Shields, Guns, Cases</td>
+                </tr>
+
+                <tr>
+                    <td>Haste</td>
+                    <td>Action/Cast speed increased</td>
+                    <td>+10%</td>
+                    <td>+10%</td>
+                    <td>Swords, Shields, Guns, Cases</td>
+                </tr>
+
+                <tr>
+                    <td>Looting</td>
+                    <td>Enemies are more likely to drop loot and EXP</td>
+                    <td>+33%</td>
+                    <td>+11%</td>
+                    <td>Guns, Cases</td>
+                </tr>
+                
+                <tr>
+                    <td>Preservation</td>
+                    <td>Item does not lose quality on death</td>
+                    <td></td>
+                    <td></td>
+                    <td>Swords, Shields, Guns, Cases</td>
+                </tr>
+
+                <tr>
+                    <td>Pockets</td>
+                    <td>Inventory space increased</td>
+                    <td>+1</td>
+                    <td>+1</td>
+                    <td>Cases, Shields</td>
+                </tr>
+
+            </table>
+        </div>
+    </section>
+
+    
+</body>
+</html>
