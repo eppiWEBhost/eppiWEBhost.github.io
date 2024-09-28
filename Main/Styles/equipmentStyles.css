@@ -26,8 +26,8 @@ body {
     
 }
 #weapons {
-    margin-left:20px;
-    margin-right:20px;
+    padding-left:20px;
+    padding-right:20px;
     background-color:whitesmoke;
     border-collapse:collapse;
     opacity: 0.94;
@@ -38,9 +38,13 @@ body {
 }
 #weapons tr td div{
     height: 100px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding-right: 15px;
 }
 #weapons tr td div img{
-    height: 90%;
+    width: 50%;
 }
 #effects {
     margin-left:20px;

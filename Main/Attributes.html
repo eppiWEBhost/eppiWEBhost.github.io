@@ -11,6 +11,17 @@
     body {
         background-image:url("/Images/MyImages/nature_8/origbig.png");
     }
+    table {
+        width: 98%;
+    }
+    .description {
+        margin-left:20px;
+        margin-right:20px;
+        margin-bottom: 20px;
+        background-color:whitesmoke;
+        border-collapse:collapse;
+        opacity: 0.94;
+    }
 </style>
 <body>
     <header>
@@ -23,6 +34,12 @@
             });
         </script> 
     </header>
+    <section id="center" class="description">
+            Attributes are additional properties that can be added to amplify the performance of 
+            in game items. Weapons can have as many as five! Property EXP costs can vary by each weapon.
+            <br> <br>
+            Levels go as such: "Common", "Experimental", "Prototype", "Refined", "Mythical"
+    </section>
     <section id="center">
         <div>
             <table id = "weapons">
@@ -38,13 +55,13 @@
                     <td>Sharpness</td>
                     <td>Permanent increase to this weapons attack stat</td>
                     <td>+20%</td>
-                    <td>2 - 5%</td>
+                    <td>5%</td>
                     <td>Swords, Shields</td>
                 </tr>
 
                 <tr>
                     <td>Adept</td>
-                    <td>Permanent increase to the amount of swings for this weapon</td>
+                    <td>Permanent increase to the amount of hits per swing for this weapon</td>
                     <td>+2</td>
                     <td>+1</td>
                     <td>Swords, Shields</td>
@@ -53,24 +70,24 @@
                 <tr>
                     <td>Ammunition</td>
                     <td>Permanent increase to the amount of shots for this weapon</td>
-                    <td>+12</td>
-                    <td>+3</td>
+                    <td>+4</td>
+                    <td>+2</td>
                     <td>Guns</td>
                 </tr>
 
                 <tr>
                     <td>Effectiveness</td>
-                    <td>Permanent increase to the amount of ticks for this weapon</td>
-                    <td>+3</td>
-                    <td>+1</td>
+                    <td>Permanent increase to the speed of ticks for this weapon</td>
+                    <td>+100%</td>
+                    <td>+50%</td>
                     <td>Cases</td>
                 </tr>
 
                 <tr>
                     <td>Mana</td>
                     <td>Permanent increase to the wielders Mana regeneration rate</td>
-                    <td>+40/s</td>
-                    <td>+10/s</td>
+                    <td>+6%/s</td>
+                    <td>+2%/s</td>
                     <td>Cases, Guns, Swords</td>
                 </tr>
 
@@ -79,7 +96,7 @@
                     <td>Decreases amount of knockback taken</td>
                     <td>-100%</td>
                     <td>-33%</td>
-                    <td>Shields, Guns</td>
+                    <td>Shields, Swords</td>
                 </tr>
 
                 <tr>
@@ -93,8 +110,8 @@
                 <tr>
                     <td>Dodge</td>
                     <td>Gives chance for wielder to avoid damage once</td>
-                    <td>9%</td>
-                    <td>3%</td>
+                    <td>24%</td>
+                    <td>8%</td>
                     <td>Swords, Guns</td>
                 </tr>
 
@@ -124,7 +141,7 @@
 
                 <tr>
                     <td>Vision</td>
-                    <td>Increase sight range by a certain amount</td>
+                    <td>Increase sight range by a certain amount. Additionally, reveals invisible targets and projectiles</td>
                     <td>+12%</td>
                     <td>+4%</td>
                     <td>Guns</td>

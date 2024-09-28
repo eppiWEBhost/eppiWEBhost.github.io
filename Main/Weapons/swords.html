@@ -39,7 +39,7 @@
                     <br>
                     Each weapon can have a certain amount of properties that enhance its abilities.
                     Certain properties are unique to certain weapon types. Collect enough experience to gain
-                    additional properties for your weapons!
+                    additional attributes for your weapons!
                     <br>
                     How to use: Tap in a direction to swing. Tap and Hold to enter shield state. Release to exit. 
                     <br>
@@ -52,7 +52,8 @@
                     <td>Description</td>
                     <td>Attribute</td>
                     <td>Attack</td>
-                    <td>Maximum properties</td>
+                    <td>Base Crit Chance</td>
+                    <td>Base Crit Damage</td>
                     <td>Experience per Property</td>
                     <td>Region</td>
                 </tr>
@@ -68,7 +69,8 @@
                         </p></td>
                     <td>None</td>
                     <td>400</td>
-                    <td>1</td>
+                    <td>+5%</td>
+                    <td>+0%</td>
                     <td>20,000 EXP</td>
                     <td><h5></h5></td>
                 </tr>
@@ -84,8 +86,41 @@
                         </p></td>
                     <td>Always hits twice</td>
                     <td>220 (x2)</td>
-                    <td>2</td>
+                    <td>+3.9% - +10.3%</td>
+                    <td>+7.8% - +20.5%</td>
                     <td>30,000 EXP</td>
+                    <td><h5>Lowlands</h5></td>
+                </tr>
+                <tr>
+                    <td class="images" id="weapon-sword-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Pack 1/2px/28.png" alt="throw-sword">
+                        </div>
+                    </td>
+                        <td><p class="weapon-description">A simple hunters dagger that seemingly recreates itself immediately when thrown.
+                            Useful for hunting wild game and destroying dartboards.
+                        </p></td>
+                    <td>Throwable. After a certain distance, dissipates</td>
+                    <td>375</td>
+                    <td>+3.9% - +11.6%</td>
+                    <td>+8.8% - +17.8%</td>
+                    <td>32,000 EXP</td>
+                    <td><h5>Lowlands</h5></td>
+                </tr>
+                <tr>
+                    <td class="images" id="weapon-sword-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Pack 4/2px/33.png" alt="sword">
+                        </div>
+                    </td>
+                        <td><p class="weapon-description">A special mahogany is welded into this fine weapon. Be careful of 
+                            making contact with it's rough and unsanded surface however.
+                        </p></td>
+                    <td>Critical Attacks mark the enemy with a splinter. Following attacks of any kind remove the mark, deals +50% DMG</td>
+                    <td>333</td>
+                    <td>+6.6% - +9.9%</td>
+                    <td>+10% - +24.1%</td>
+                    <td>31,500 EXP</td>
                     <td><h5>Lowlands</h5></td>
                 </tr>
                 <tr>
@@ -101,7 +136,8 @@
                     </td>
                     <td><i>Ingrains</i> the target for 1 second on hit. Additionally, The effected target is also more susceptible to status effects</td>
                     <td>440</td>
-                    <td>2</td>
+                    <td>+8.4% - +13.5%</td>
+                    <td>+11% - +25.1%</td>
                     <td>32,500 EXP</td>
                     <td><h5>Lowlands</h5></td>
                 </tr>
@@ -115,9 +151,10 @@
                             A tool with dual prongs that are great for penetrating twice at the same time. Oddly colored stains left on the 
                             smooth shaft indicate that it is used to this.
                         </p></td>
-                    <td>Chance to apply <i>Bleeding</i> and <i>Poison</i></td>
+                    <td>Critical Hits apply <i>Bleeding</i> and <i>Poison</i></td>
                     <td>380</td>
-                    <td>3</td>
+                    <td>+10%</td>
+                    <td>+0%</td>
                     <td>50,000 EXP</td>
                     <td><h5>Desert</h5></td>
                 </tr>
@@ -135,8 +172,48 @@
                         </td>
                         <td>Nearby enemies are afflicted with the <i>Fear</i> status effect for 10 seconds upon entering battle.</td>
                         <td>490</td>
-                        <td>3</td>
+                        <td>+14.4% - +18.6%</td>
+                        <td>+14% - +28.8%</td>
                         <td>55,000 EXP</td>
+                        <td><h5>Desert</h5></td>
+                </tr>
+                <tr>
+                    <td class="images" id="weapon-sword-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Pack 3/2px/34.png">
+                        </div>
+                    </td>
+                        <td>
+                            <p class="weapon-description">
+                                Collects dust over time, adding additional ruggedness to the blade. However, the dust may be 
+                                blown off if not stable
+                            </p>
+                        </td>
+                        <td>Dealing damage increases damage of attacks by +5 (Maximum +50). Taking damage resets the damage to normal.</td>
+                        <td>420</td>
+                        <td>+9.8% - +13.9%</td>
+                        <td>+13.9% - +26.7%</td>
+                        <td>42,000 EXP</td>
+                        <td><h5>Desert</h5></td>
+                </tr>
+                <tr>
+                    <td class="images" id="weapon-sword-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Pack 2/2px/09.png">
+                        </div>
+                    </td>
+                        <td>
+                            <p class="weapon-description">
+                                Mimicry of a quite familiar style. The thrusts and slashes are able to cover a wide variety
+                                of attack styles.
+                            </p>
+                        </td>
+                        <td>Stab attack extends reach greatly, ignording the bonus defense of armored enemies. 
+                            Slash attack can destroy projectiles.</td>
+                        <td>450</td>
+                        <td>+10% - +14.3%</td>
+                        <td>+14.6% - 29.0%</td>
+                        <td>59,000 EXP</td>
                         <td><h5>Desert</h5></td>
                 </tr>
                 <tr>
@@ -151,9 +228,10 @@
                                 All who come face to face with the wielder of this sword will come face to face with bricks of countless rocks.
                             </p>
                         </td>
-                        <td>Upon landing a hit, a rock of varying size is dropped on the target, dealing 50-100% damage</td>
+                        <td>Upon landing a hit, a rock of varying size is dropped on the target, dealing 50-100% damage in an area.</td>
                         <td>340</td>
-                        <td>3</td>
+                        <td>+15%</td>
+                        <td>+0%</td>
                         <td>65,000 EXP</td>
                         <td><h5>Mountains</h5></td>
                 </tr>
@@ -173,8 +251,52 @@
                             from this weapon, if it returns an attack within 0.3s, returning its attack will deal twice the damage you took.
                         </td>
                         <td>500</td>
-                        <td>4</td>
+                        <td>15.6% - +19.9%</td>
+                        <td>+19.2% - +36.6%</td>
                         <td>67,300 EXP</td>
+                        <td><h5>Mountains</h5></td>
+                </tr>
+                <tr>
+                    <td class="images" id="weapon-sword-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Pack 2/2px/37.png">
+                        </div>
+                    </td>
+                        <td>
+                            <p class="weapon-description">
+                                This legendary artifact is constantly in need of repair. Broken debris always causes
+                                a mess for maintenance. It is important to be cautious around sharper debris.
+                            </p>
+                        </td>
+                        <td>
+                            When swinging the weapon, fire a wave of 6 rocks that deal 10% additional damage each. 
+                            2-4 of the rocks will be sharpened, gaining a +50% bonus Crit DMG.
+                        </td>
+                        <td>300</td>
+                        <td>+16.8% - +22%</td>
+                        <td>+23.4% - +38.9%</td>
+                        <td>66,600 EXP</td>
+                        <td><h5>Mountains</h5></td>
+                </tr>
+                <tr>
+                    <td class="images" id="weapon-sword-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Pack 3/2px/20.png">
+                        </div>
+                    </td>
+                        <td>
+                            <p class="weapon-description">
+                                Condensed thunder captured from the peaks of the highest mountains. Pulses of electricity emanates 
+                                from the slightest touch.
+                            </p>
+                        </td>
+                        <td>
+                            On contact, launches chain lightning to up to 3 nearby foes, dealing 20% damage and applying <i>Stunned</i>
+                        </td>
+                        <td>400</td>
+                        <td>+14.7% - +24.8%</td>
+                        <td>+26.4% - +44.2%</td>
+                        <td>69,940 EXP</td>
                         <td><h5>Mountains</h5></td>
                 </tr>
 
@@ -192,7 +314,8 @@
                         </td>
                         <td>On every swing, creates a clone of itself, dealing 33% of the original damage and swirls around the wielder for a few seconds</td>
                         <td>300</td>
-                        <td>4</td>
+                        <td>+20%</td>
+                        <td>+0%</td>
                         <td>67,300 EXP</td>
                         <td><h5>Plains</h5></td>
                 </tr>
@@ -209,11 +332,77 @@
                                     giving much needed relief in times of great stress.
                             </p>
                         </td>
-                        <td>When dealing damage, recover HP equal to 20% of damage dealt.</td>
+                        <td>Can be thrown. When dealing damage, recover HP equal to 20% of damage dealt.</td>
                         <td>360</td>
-                        <td>5</td>
+                        <td>+22.8% - +31.5%</td>
+                        <td>+35% - +46.8%</td>
                         <td>70,000 EXP</td>
                         <td><h5>Plains</h5></td>
+                </tr>
+                <tr>
+                    <td class="images" id="weapon-sword-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Pack 4/2px/05.png">
+                        </div>
+                    </td>
+                        <td>
+                            <p class="weapon-description">
+                                A casted blade conjured from the depths of a previously mythical Desert Foliage. From its 
+                                image it is plainly obvious that this weapon has the ability to cause foes to be weakened 
+                                and defenseless.
+                            </p>
+                        </td>
+                        <td>Always hits thrice.</td>
+                        <td>170 (x3)</td>
+                        <td>+20.6% - +30.9%</td>
+                        <td>+20.5% - +41%</td>
+                        <td>75,000 EXP</td>
+                        <td><h5>Plains</h5></td>
+                </tr>
+                <tr>
+                    <td class="images" id="weapon-sword-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Pack 1/2px/31.png">
+                        </div>
+                    </td>
+                        <td>
+                            <p class="weapon-description">
+                                A sickle once intended to harvest the fertile farmland of the Plains. Over years of accidents, it has 
+                                shifted career paths to become quite adept at harvesting other things.
+                            </p>
+                        </td>
+                        <td>Crit Chance increases by 1% for every percentage of health the wielder has over the opponents.
+                        </td>
+                        <td>290</td>
+                        <td>+6.6% - +7.9%</td>
+                        <td>+29.4% - +50.0%</td>
+                        <td>77,300 EXP</td>
+                        <td><h5>Plains</h5></td>
+                </tr>
+
+                <tr>
+                    <td class="images" id="weapon-sword-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Pack 6/2px/10.png" alt="Menace">
+                        </div>
+                    </td>
+                        <td>
+                            <p class="weapon-description">
+                                Everything about this weapon is elegant. From its glistening hilt to its tip, leaving a 
+                                glowing afterimage, to its swift and flawless motions, allowing for swift movement.
+                            </p>
+                        </td>
+                        <td>
+                            All attacks produce an afterimage in the same area, dealing a second instance of its damage.
+                            Holding the attack causes the player to shift a certain distance forward, causing slices on the way.
+                        </td>
+                        <td>250 (Sweep)
+                            70 * 3 (Slice)
+                        </td>
+                        <td>+30%</td>
+                        <td>+0%</td>
+                        <td>83,000 EXP</td>
+                        <td><h5>Ice</h5></td>
                 </tr>
                 <tr>
                     <td class="images" id="weapon-sword-image">
@@ -230,7 +419,31 @@
                         <td>Gain a stack of <i>Frigid</i> on every hit.  
                             Performing a hold attack consumes all stacks (up to 4), increasing its damage by 1.5x per <i>Frigid</i> stack.</td>
                         <td>200 (500)</td>
-                        <td>6</td>
+                        <td>+33.2% - +40.9%</td>
+                        <td>+44.2% - +66.8%</td>
+                        <td>80,000 EXP</td>
+                        <td><h5>Ice</h5></td>
+                </tr>
+
+                <tr>
+                    <td class="images" id="weapon-sword-image">
+                        <div>
+                            <img src="/Images/WeaponSprites/Pack 4/2px/14.png" alt="Malice">
+                        </div>
+                    </td>
+                        <td>
+                            <p class="weapon-description">
+                                The sealed components of this seemingly frozen blade posesses the ability to take
+                                any shape. Water is quite dynamic in this manner.
+                            </p>
+                        </td>
+                        <td>Holding the attack button greatly extends the reach
+                            and causes a slow but wide attack to sweep the players radius,
+                            dealing damage and applying <i>Frostbite</i>
+                        </td>
+                        <td>400</td>
+                        <td>+35.8% - +44.5%</td>
+                        <td>47.2% - +72%</td>
                         <td>80,000 EXP</td>
                         <td><h5>Ice</h5></td>
                 </tr>
@@ -245,10 +458,11 @@
                                 This weapon can link minds together and store certain memories. 
                             </p>
                         </td>
-                        <td>On hit, apply a <b>Sheer Cold</b> tag. When attacking an opponent affected by <b>Sheer Cold</b>, 
+                        <td>On hit, apply a <b>Sheer Cold</b> tag for 30s. When attacking an opponent affected by <b>Sheer Cold</b>, 
                         all active opponents visible on screen with <b>Sheer Cold</b> take 66% <i>Ice</i> damage</td>
                         <td>380</td>
-                        <td>5</td>
+                        <td>+36% - +50%</td>
+                        <td>+50% - +72%</td>
                         <td>90,000 EXP</td>
                         <td><h5>Ice</h5></td>
                 </tr>
